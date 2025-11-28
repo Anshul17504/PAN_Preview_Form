@@ -1,7 +1,22 @@
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("/fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply globally */
+html, body {
+  font-family: "NotoSans-Regular", sans-serif !important;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -9,6 +24,9 @@
     --foreground: #ededed;
   }
 }
+
+
+
 
 html,
 body {
